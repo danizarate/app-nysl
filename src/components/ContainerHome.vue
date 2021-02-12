@@ -1,7 +1,8 @@
 <template>
     <div id = "containerHome" class="container">
         <div class="row">
-            <div class="col-12 col-sm-12 mt-2 mb-2">
+            <!-- En la siguiente linea; encontraran las propiedades que permiten que el carrusel sea reactivo al giro -->
+            <div class="col-md-5ths col-lg-5ths col-xs-6 col-sm-4 pt-2">
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
@@ -41,6 +42,9 @@
                 </a>
                 </div>
             </div>
+            <div class="container-fluid d-none-col-md-5ths d-none-col-lg-5ths col-sm-4"> <!-- Averiguar en que consiste este codigo e implemente ideas si asi lo desea-->
+                <h1>Welcome to NYSL Soccer Leage</h1>
+            </div>
         </div>
         <div>
         <!--     <button>Next</button> -->
@@ -55,8 +59,12 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="saas">
+  /*   @include media-breakpoint-up(xs) { ... }
+    @include media-breakpoint-up(sm) { ... }
+    @include media-breakpoint-up(md) { ... }
+    @include media-breakpoint-up(lg) { ... }
+    @include media-breakpoint-up(xl) { ... } */
 </style>
 
 
