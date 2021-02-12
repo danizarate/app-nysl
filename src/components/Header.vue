@@ -13,12 +13,11 @@
             </button>
                 
             <ul class="dropdown-menu dropdown-menu-end newdropmenu">
-                <!-- <li><button class="dropdown-item" type="button"><router-link to="/">Home</router-link></button></li> -->
-                <li><button class="dropdown-item textli" type="button" onclick="location.href='Home';">Home</button></li>
-                <li><button class="dropdown-item textli" type="button"><router-link to="/ListadodePartidos">Game Info</router-link></button></li>
-                <li><button class="dropdown-item textli" type="button">Rules</button></li>
-                <li><button class="dropdown-item textli" type="button">Contact</button></li>
-                <li><button class="dropdown-item textli" type="button">Login</button></li>
+                <li><button class="dropdown-item" type="button"><router-link class="textli" to="/">Home</router-link></button></li>
+                <li><button class="dropdown-item" type="button"><router-link class="textli" to="/ListadodePartidos">Game Info</router-link></button></li>
+                <li><button class="dropdown-item" type="button"><router-link class="textli" to="#">Rules</router-link></button></li>
+                <li><button class="dropdown-item" type="button"><router-link class="textli" to="#">Contact</router-link></button></li>
+                <li><button class="dropdown-item" type="button"><router-link class="textli" to="#">Login</router-link></button></li>
             </ul> 
                
         </nav>
@@ -49,6 +48,7 @@ export default {
 
 .textli {
     color: rgb(10, 86, 10);
+    text-decoration: none;
 }
 
 .custom-toggler .navbar-toggler-icon { 

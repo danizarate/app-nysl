@@ -1,6 +1,6 @@
 <template>
     <div id = "containerHome">
-        <div class="container-fluid mt-5 pt-4 bgrep" style="font-family: 'Anton', sans-serif;">
+        <div class="container-fluid mt-5 pt-3 bgrep" style="font-family: 'Anton', sans-serif;">
             <div class="row">
                 <div class="col-md-5ths col-lg-5ths col-xs-6 col-sm-4 pt-2">
                     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div class="container-fluid d-none-col-md-5ths d-none-col-lg-5ths col-sm-4 pt-3"> <!-- Averiguar en que consiste este codigo e implemente ideas si asi lo desea-->
-                    <h1>Welcome to NYSL Soccer Leage</h1>
+                    <h1>Welcome to NYSL Soccer League</h1>
                 </div>
             </div>
         </div>
