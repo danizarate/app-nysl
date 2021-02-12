@@ -1,6 +1,7 @@
 <template>
     <div id="Miheader">
         <!-- Codigo del menu principal -->
+        <!-- Aquí estuvo la caro -->
         <nav class="navbar bg-dark navbar-dark">
                 
             <a class="navbar-brand" href="/">
