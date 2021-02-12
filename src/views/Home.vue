@@ -2,7 +2,6 @@
   <div class="home">
     <Miheader />
     <ContainerHome />
-    <!-- <Maps /> -->
   </div>
  
 </template>
@@ -12,7 +11,6 @@
 
 import Miheader from "@/components/Header.vue";
 import ContainerHome from "@/components/ContainerHome.vue";
-/* import Maps from '../components/Maps.vue'; */
 
 
 export default {
@@ -20,9 +18,8 @@ export default {
 
   components: {
 
-    ContainerHome,
     Miheader,
-    /* Maps */
+    ContainerHome
     
   }
 };

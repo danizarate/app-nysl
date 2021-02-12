@@ -1,22 +1,22 @@
 <template>
-  <Header />
-  <ListadoPartidos />
+    <Miheader />
+    <ListadoPartidos />
 </template>
 
-
-
 <script>
+import Miheader from "@/components/Header.vue";
 import ListadoPartidos from "@/components/ListadoPartidos.vue";
-import Header from "@/components/Header.vue";
+
 export default {
-    components:{
-        ListadoPartidos,
-        Header
+  name: "Game Info",
 
+  components: {
 
-
-    }
-}
+    Miheader,
+    ListadoPartidos
+    
+  }
+};
 </script>
 
 <style>
