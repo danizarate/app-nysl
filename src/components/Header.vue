@@ -1,5 +1,5 @@
 <template>
-    <div id="Miheader">
+    <div id="Miheader" class="sticky-top">
         <!-- Codigo del menu principal -->
         <nav class="navbar bg-dark navbar-dark">
                 
