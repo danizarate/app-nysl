@@ -403,6 +403,4 @@
     height: auto;
 }
 
-        
-        
 </style>

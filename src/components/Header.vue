@@ -17,7 +17,9 @@
                 <li><button class="dropdown-item" type="button"><router-link class="textli" to="/ListadodePartidos">Game Info</router-link></button></li>
                 <li><button class="dropdown-item" type="button"><router-link class="textli" to="#">Rules</router-link></button></li>
                 <li><button class="dropdown-item" type="button"><router-link class="textli" to="#">Contact</router-link></button></li>
-                <li><button class="dropdown-item" type="button"><router-link class="textli" to="#">Login</router-link></button></li>
+                <li><button class="dropdown-item" type="button"><router-link class="textli" to="/Mensajes">Chat</router-link></button></li>
+                <li v-if="$store.getters.isLoggedIn"><button class="dropdown-item textli" @click.prevent="Logout" type="button">Logout</button></li>
+                <li v-else><button class="dropdown-item" type="button"><router-link class="textli" to="/Login">Login</router-link></button></li>
             </ul> 
                
         </nav>
@@ -26,8 +28,21 @@
 </template>
 
 <script>
+import firebase from "firebase"
+import "@/firebase/init"
+
 export default {
     name: "MyHeader",
+
+    methods: {
+        Logout(){
+            firebase.auth().signOut().then(() =>{
+                this.$store.dispatch('setUserAction', null)
+                this.$router.push({name:'Home'})
+            })
+        }
+    }
+
     
 }
 

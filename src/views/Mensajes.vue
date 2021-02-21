@@ -1,21 +1,21 @@
 <template>
-<div class="ListadoPartidos">
+<div class="Mensajes">
     <Miheader />
-    <ListadoPartidos />
+    <Mensajesapp />
 </div>
 </template>
 
 <script>
 import Miheader from "@/components/Header.vue";
-import ListadoPartidos from "@/components/ListadoPartidos.vue";
+import Mensajesapp from "@/components/Mensajesapp.vue";
 
 export default {
-  name: "Game Info",
+  name: "Login",
 
   components: {
 
     Miheader,
-    ListadoPartidos
+    Mensajesapp
     
   }
 };

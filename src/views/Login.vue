@@ -1,21 +1,21 @@
 <template>
-<div class="ListadoPartidos">
+<div class="Login">
     <Miheader />
-    <ListadoPartidos />
+    <Logintoapp />
 </div>
 </template>
 
 <script>
 import Miheader from "@/components/Header.vue";
-import ListadoPartidos from "@/components/ListadoPartidos.vue";
+import Logintoapp from "@/components/Logintoapp.vue";
 
 export default {
-  name: "Game Info",
+  name: "Login",
 
   components: {
 
     Miheader,
-    ListadoPartidos
+    Logintoapp
     
   }
 };
@@ -24,3 +24,5 @@ export default {
 <style>
 
 </style>
+
+
